@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label - Página Principal</title>
+    <link rel="icon" type="image/x-icon" href="img/label-logo.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/html2pdf.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/label-logo.jpg" width="50" height="50" style="border-radius: 50%;" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <!--Itens do navbar-->
+                <ul class="navbar-nav d-flex justify-content-around col-12">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">PAINEL PRINCIPAL</a></li>
+                    <li class="nav-item"><a href="projeto.html" class="nav-link">NOSSO PROJETO</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">QUEM SOMOS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTATO</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel -->
+    <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Item 1 -->
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/img-1.webp" class="d-block w-100" alt="...">
+            </div>
+
+            <!-- Item 2 -->
+            <div class="carousel-item active" data-bs-interval="7000">
+                <img src="img/img-2.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    
+    <div class="container my-5 ">
+        <div class="row justify-content-around">
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="d-flex justify-content-center">
+                    <img src="img/qualidade.webp" alt="Qualidade">
+                </div>
+                <p class="text-center"><b>Produtos de Qualidade</b></p>
+            </div>
+
+            <div class="col-12 col-sm-4 col-md-4">
+                <div class="d-flex justify-content-center">
+                    <img src="img/lucro.webp" alt="Qualidade">
+                </div>
+                <p class="text-center"><b>Ótima margem de Lucro</b></p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 ">
+                <div class="d-flex justify-content-center">
+                    <img src="img/progressao-grafica.webp" alt="Qualidade">
+                </div>
+                <p class="text-center"><b>Segmento em Crescimento</b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 bg-green text-center px-0 p-4 p-md-5">
+        <div class="container px-0 px-md-5">
+            <h1 class="display-4 mb-4"><b>DEPOIMENTOS</b></h1>
+            <p>Hoje, gostaria de compartilhar com vocês a minha experiência inesquecível com os tênis adquiridos em sua loja. Desde o momento em que entrei, fui cativado pelo ambiente moderno e acolhedor, que refletia perfeitamente a marca Nike.</p>
+            <p>Ao explorar a vasta seleção de tênis disponíveis, fiquei impressionado com a variedade de modelos, estilos e cores que encontrei. Atenção aos detalhes e qualidade excepcional de cada par</p>
+
+        </div>
+    </div>
+
+    <footer class="my-5">
+        <h1 class="display-5 text-center mb-5">Fique por dentro das nossas novidades</h1>
+
+        <div class="container">
+            <div class="col-12 col-md-8 mx-auto">
+                <p class="m-0 ms-2 text-secondary">Insira seu endereço de email *</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Exemplo: nome@exemeplo.com" aria-label="Recipient's username" aria-describedby="button-register-email">
+                    <button class="btn btn-outline-secondary" type="button" id="button-register-email">Cadastrar-se</button>
+                  </div>
+            </div>
+        </div>
+
+        <img class="d-block mx-auto my-5" src="img/label-logo.jpg" alt="Logo" width="150" height="150" style="border-radius: 50%;">
+    </footer>
+</body>
+</html>

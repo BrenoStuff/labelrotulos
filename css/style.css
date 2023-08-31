@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-green {
+    color: #fff;
+    background-color: rgb(127, 168, 139);
+    border-color: rgb(127, 168, 139);
+}
+.btn-green:hover, .btn-green:focus {
+    color: #fff;
+    background-color: rgb(67, 88, 73);
+    border-color: rgb(67, 88, 73);
+}
+
+.bg-green {
+    background-color: rgb(127, 168, 139);
+}
+
+.outer-content {
+    max-height: 400px;
+}
+
+.inner-content {
+    width: 776px;
+    height: 1122px;
+    font-size: 0.6rem;
+    line-height: 0.1;
+}
+
+.rotulo {
+    height:280px;
+    background:#fff;
+}
