@@ -26,9 +26,9 @@
 
                 <!--Itens do navbar-->
                 <ul class="navbar-nav d-flex justify-content-around col-12">
-                    <li class="nav-item"><a href="index.html" class="nav-link">PAINEL PRINCIPAL</a></li>
-                    <li class="nav-item"><a href="projeto.html" class="nav-link active">NOSSO PROJETO</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">ÍNICIO</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">QUEM SOMOS</a></li>
+                    <li class="nav-item"><a href="projeto.html" class="nav-link active">NOSSO PROJETO</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">CONTATO</a></li>
                 </ul>
 
@@ -286,7 +286,13 @@
 
                 <h3 class="text-center my-3">Opções</h3>
                 <a type="button" href="#preview" class="btn btn-green w-100 mb-3" onclick="preparatePDF()">Visualizar Preview</a>
-                <button class="btn btn-green w-100 mb-3" onclick="generatePDF()">Gerar PDF</button>
+                <button type="button" class="btn btn-green w-100 mb-3" onclick="generatePDF()">Gerar PDF</button>
+                <button type="button" class="btn btn-green w-100 mb-3" data-bs-toggle="modal" data-bs-target="#modalPDF">Botão Teste</button>
+
+                <!-- AD -->
+                <div class="my-4 col-12" style="background:#00000050; height: 60vh;">
+                    AD
+                </div>
             </div>
         </div>
 
@@ -374,6 +380,31 @@
     <footer class="my-5">
         <img class="d-block mx-auto" src="img/label-logo.jpg" alt="Logo" width="150" height="150" style="border-radius: 50%;">
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPDF" tabindex="-1" aria-labelledby="modalPDFLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Titulo do modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mb-5">
+                    <p class="text-center">Texto apresentando o porque de comprar a versao blah blah blah Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae qui ad tempore possimus illum, voluptas, architecto facilis iste deleniti distinctio. Cupiditate magnam numquam explicabo minus obcaecati omnis ex. Suscipit!</p>
+                    <div class="row">
+                        <div class="col-md-6 order-sm-last order-md-0 text-center">
+                            <p>parte gratis</p>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">nao pagar</button>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <p>parte paga</p>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">pagar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
