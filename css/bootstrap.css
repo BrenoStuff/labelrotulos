@@ -3845,7 +3845,7 @@ textarea.form-control-lg {
   display: block;
   padding: 0.5rem 1rem;
   color: rgb(127, 168, 139);
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -5915,7 +5915,7 @@ textarea.form-control-lg {
 }
 
 .carousel-caption {
-  background: rgb(127, 168, 139, 0.8);
+  background: #2B5336;
   border-radius: 20px;
   position: absolute;
   right: 15%;

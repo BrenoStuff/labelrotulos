@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Label - Montador de Rótulo</title>
+    <title>Label - SERVIÇO</title>
     <link rel="icon" type="image/x-icon" href="img/label-logo.ico">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,10 +12,10 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-green" >
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/label-logo.jpg" width="50" height="50" style="border-radius: 50%;" alt="Logo">
+            <a class="navbar-brand logo-font" href="index.html">
+                Label
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite">
@@ -23,12 +23,11 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSite">
-
                 <!--Itens do navbar-->
                 <ul class="navbar-nav d-flex justify-content-around col-12">
-                    <li class="nav-item"><a href="index.html" class="nav-link">ÍNICIO</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">QUEM SOMOS</a></li>
-                    <li class="nav-item"><a href="projeto.html" class="nav-link active">NOSSO PROJETO</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active">INÍCIO</a></li>
+                    <li class="nav-item"><a href="quem-somos.html" class="nav-link">QUEM SOMOS</a></li>
+                    <li class="nav-item"><a href="servico.html" class="nav-link">SERVIÇO</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">CONTATO</a></li>
                 </ul>
 
@@ -37,7 +36,7 @@
     </nav>
 
     <div class="container">
-        <div class="row my-3">
+        <div class="my-3">
             <div class="col-12 text-center">
                 <h1 class="display-4">Montador de Rótulo</h1>
                 <h3 class="lead">Gere um PDF para impressão com um rótulo personalizado</h3>
@@ -281,7 +280,7 @@
                 <!-- Email do Estabelecimento -->
                 <div class="form-floating">
                     <input type="email" class="form-control" placeholder="minhaloja@exemplo.com" id="floatingEmail">
-                    <label for="floatingEmail">Email do Estabelecimento</label>
+                    <label for="floatingEmail">Mensagem do Estabelecimento</label>
                 </div>
 
                 <h3 class="text-center my-3">Opções</h3>
@@ -316,43 +315,43 @@
                                                 <tbody>
                                                     <tr class="table-secondary">
                                                         <td>Calorias</td>
-                                                        <td class="text-center" id="calorias">10g</td>
+                                                        <td class="text-center preview-field" id="calorias">10g</td>
                                                     </tr>
                                                     <tr class="table-light">
                                                         <td>Carboidratos</td>
-                                                        <td class="text-center" id="carboidratos">10g</td>
+                                                        <td class="text-center preview-field" id="carboidratos">10g</td>
                                                     </tr>
                                                     <tr class="table-secondary">
                                                         <td>Proteínas</td>
-                                                        <td class="text-center" id="proteinas">10g</td>
+                                                        <td class="text-center preview-field" id="proteinas">10g</td>
                                                     </tr>
                                                     <tr class="table-light">
                                                         <td>Gorduras Saturadas</td>
-                                                        <td class="text-center" id="gordSaturadas">10g</td>
+                                                        <td class="text-center preview-field" id="gordSaturadas">10g</td>
                                                     </tr>
                                                     <tr class="table-secondary">
                                                         <td>Gorduras Insaturadas</td>
-                                                        <td class="text-center" id="gordInsaturadas">10g</td>
+                                                        <td class="text-center preview-field" id="gordInsaturadas">10g</td>
                                                     </tr>
                                                     <tr class="table-light">
                                                         <td>Gorduras Trans</td>
-                                                        <td class="text-center" id="gordTrans">10g</td>
+                                                        <td class="text-center preview-field" id="gordTrans">10g</td>
                                                     </tr>
                                                     <tr class="table-secondary">
                                                         <td>Fibras</td>
-                                                        <td class="text-center" id="fibras">10g</td>
+                                                        <td class="text-center preview-field" id="fibras">10g</td>
                                                     </tr>
                                                     <tr class="table-light">
                                                         <td>Açucares</td>
-                                                        <td class="text-center" id="acucar">10g</td>
+                                                        <td class="text-center preview-field" id="acucar">10g</td>
                                                     </tr>
                                                     <tr class="table-secondary">
                                                         <td>Sódio</td>
-                                                        <td class="text-center" id="sodio">10g</td>
+                                                        <td class="text-center preview-field" id="sodio">10g</td>
                                                     </tr>
                                                     <tr class="table-light">
                                                         <td>Colesterol</td>
-                                                        <td class="text-center" id="colesterol">10g</td>
+                                                        <td class="text-center preview-field" id="colesterol">10g</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -390,7 +389,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body mb-5">
-                    <p class="text-center">Texto apresentando o porque de comprar a versao blah blah blah Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae qui ad tempore possimus illum, voluptas, architecto facilis iste deleniti distinctio. Cupiditate magnam numquam explicabo minus obcaecati omnis ex. Suscipit!</p>
+                    <p class="text-center"></p>
                     <div class="row">
                         <div class="col-md-6 order-last order-md-0 text-center">
                             <p>parte gratis</p>

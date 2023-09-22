@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Label - Página Principal</title>
+    <title>Label - INÍCIO</title>
     <link rel="icon" type="image/x-icon" href="img/label-logo.ico">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,10 +12,10 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-green" >
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/label-logo.jpg" width="50" height="50" style="border-radius: 50%;" alt="Logo">
+            <a class="navbar-brand logo-font" href="index.html">
+                Label
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite">
@@ -25,9 +25,9 @@
             <div class="collapse navbar-collapse" id="navbarSite">
                 <!--Itens do navbar-->
                 <ul class="navbar-nav d-flex justify-content-around col-12">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">ÍNICIO</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">QUEM SOMOS</a></li>
-                    <li class="nav-item"><a href="projeto.html" class="nav-link">NOSSO PROJETO</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link active">INÍCIO</a></li>
+                    <li class="nav-item"><a href="quem-somos.html" class="nav-link">QUEM SOMOS</a></li>
+                    <li class="nav-item"><a href="servico.html" class="nav-link">SERVIÇO</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">CONTATO</a></li>
                 </ul>
 
@@ -37,35 +37,16 @@
 
     <!-- Carrossel -->
     <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        </div>
-
         <div class="carousel-inner">
-            <!-- Item 1 -->
-            <div class="carousel-item" data-bs-interval="5000">
-                <img src="img/img-1.webp" class="d-block w-100" alt="...">
-            </div>
-
             <!-- Item 2 -->
             <div class="carousel-item active" data-bs-interval="7000">
                 <img src="img/img-2.webp" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Monte seu rótulo</h5>
+                    <p><a href="servico.html" class="text-light">Clique aqui para ir ao nosso montador de rótulo</a></p>
                   </div>
             </div>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
     </div>
     
     <div class="container my-5 ">
@@ -94,11 +75,27 @@
     </div>
 
     <div class="w-100 bg-green text-center px-0 p-4 p-md-5">
-        <div class="container px-3 px-md-5">
-            <h1 class="display-4 mb-4"><b>DEPOIMENTOS</b></h1>
-            <p>Hoje, gostaria de compartilhar com vocês a minha experiência inesquecível com os tênis adquiridos em sua loja. Desde o momento em que entrei, fui cativado pelo ambiente moderno e acolhedor, que refletia perfeitamente a marca Nike.</p>
-            <p>Ao explorar a vasta seleção de tênis disponíveis, fiquei impressionado com a variedade de modelos, estilos e cores que encontrei. Atenção aos detalhes e qualidade excepcional de cada par</p>
+        <div class="container px-3 px-md-5 text-light">
+            <h1 class="display-4 mb-4">Depoimentos</h1>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p>Joana, Microempreendedora:</p>
+                    <p>"Estou extremamente satisfeita com os rótulos de marmitas saudáveis personalizados que encomendei no site. Eles realmente agregaram valor à minha marca. Os designs são lindos e refletem a qualidade dos alimentos que ofereço. Além disso, a equipe de atendimento ao cliente foi muito prestativa em todo o processo. Recomendo muito!"</p>
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <p>Pedro, Dono de Restaurante Saudável:</p>
+                    <p>"Como proprietário de um restaurante focado em alimentação saudável, a apresentação é crucial. Os rótulos de marmitas personalizados que encomendamos no site foram um grande diferencial para nossa marca. Eles não apenas comunicam claramente as informações nutricionais, mas também têm um visual incrível. Nosso cliente adora!"</p>
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-5">
+                    <p>Maria, Nutricionista e Microempreendedora:</p>
+                    <p>"Como nutricionista que oferece planos de refeições personalizadas, os rótulos de marmitas que encontrei neste site são uma verdadeira mão na roda. Eles me permitem personalizar as informações nutricionais de forma clara e profissional. Meus clientes adoram a atenção aos detalhes e o aspecto profissional que esses rótulos trazem ao serviço."</p>
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-5">
+                    <p>André, Fundador de uma Delivery de Comida Fit:</p>
+                    <p>"A qualidade dos rótulos de marmitas saudáveis que encomendamos deste site é impressionante. Eles são resistentes à umidade, o que é essencial para nossos produtos. Além disso, a impressão é nítida e as cores são vibrantes. Isso realmente ajuda a destacar nossa marca no mercado de comida saudável."</p>
+                </div>
 
+            </div>
         </div>
     </div>
 

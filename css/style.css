@@ -1,22 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
+@font-face {
+    font-family:Dream-Avenue;
+    src: url(../fonts/Dream-Avenue.ttf);
+}
+  
+.logo-font {
+    font-family: Dream-Avenue;
+    font-size: 2rem;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 .btn-green {
     color: #fff;
-    background-color: rgb(127, 168, 139);
-    border-color: rgb(127, 168, 139);
+    background-color: #2B5336;
+    border-color: #2B5336;
 }
 .btn-green:hover, .btn-green:focus {
     color: #fff;
-    background-color: rgb(67, 88, 73);
-    border-color: rgb(67, 88, 73);
+    background-color: #1e3b26;
+    border-color: #1e3b26;
 }
 
 .bg-green {
-    background-color: rgb(127, 168, 139);
+    background-color: #2B5336;
 }
 
 .outer-content {
