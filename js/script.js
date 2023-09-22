@@ -14,16 +14,6 @@ function generatePDF() {
 }
 
 function preparatePDF() {
-    const inputs = document.querySelectorAll('.form-control')
-    const selects = document.querySelectorAll('.form-select')
-    const labels = document.querySelectorAll('.form-label')
-    const previewFields = document.querySelectorAll('.preview-field')
-
-    // previewFields.forEach(field => {
-    //     field.innerHTML = inputs[field.id].value ? inputs[field.id].value : "0" + " " + selects[field.id].value;
-    //     console.log(field.id);
-    // })
-
     // Calorias
     document.getElementById('calorias').innerHTML = document.getElementById('floatingCalorias').value ? document.getElementById('floatingCalorias').value + " " + document.getElementById('optionCalorias').value : "0" + " " + document.getElementById('optionCalorias').value;
 
