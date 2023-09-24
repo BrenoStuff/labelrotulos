@@ -104,5 +104,5 @@ function changeBackgroundColor() {
 
 function unlockProFeatures() {
     document.getElementById('pro-features').disabled = false;
-    document.getElementById('anuncio-label').remove();
+    document.getElementById('anuncio-label').innerHTML = "&nbsp;";
 }
