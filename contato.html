@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label - INÍCIO</title>
+    <link rel="icon" type="image/x-icon" href="img/label-logo.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/html2pdf.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-green" >
+        <div class="container">
+            <a class="navbar-brand logo-font" href="index.html">
+                Label
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSite">
+                <!--Itens do navbar-->
+                <ul class="navbar-nav d-flex justify-content-around col-12">
+                    <li class="nav-item"><a href="index.html" class="nav-link">INÍCIO</a></li>
+                    <li class="nav-item"><a href="quem-somos.html" class="nav-link">QUEM SOMOS</a></li>
+                    <li class="nav-item"><a href="servico.html" class="nav-link">SERVIÇO</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link active">CONTATO</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="my-3 col-12 text-center">
+        <h1 class="display-4">Contato</h1>
+        <h3 class="lead">Envie uma mensagem para nós</h3>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 order-last order-md-0 mt-4 mt-md-0">
+                <img class="img-fluid" src="img/pexels-roman-odintsov-cropped.jpg" alt="Pessoa feliz">
+            </div>
+            <div class="col-12 col-md-8">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" placeholder="0" id="floatingNomeContato">
+                        <label for="floatingNomeContato">Nome Completo</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" placeholder="0" id="floatingEmailContato">
+                        <label for="floatingEmailContato">Email</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingMensagemContato" style="height: 100px"></textarea>
+                        <label for="floatingMensagemContato">Sua mensagem</label>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Quero receber novidades sobre a Label</label>
+                    </div>
+                    <button type="submit" class="btn btn-green">Enviar</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="my-5">
+        <img class="d-block mx-auto" src="img/label-logo.jpg" alt="Logo" width="150" height="150" style="border-radius: 50%;">
+    </footer>
+</body>
+</html>
