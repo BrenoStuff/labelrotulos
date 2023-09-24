@@ -95,3 +95,14 @@ function exibirImagem() {
         imagemExibida.src = 'https://labelrotulos.pages.dev/img/label-logo.png';
     }
 }
+
+function changeBackgroundColor() {
+    const color = document.getElementById('colorInput').value;
+    console.log(color)
+    document.getElementById('content').style.backgroundColor = color;
+}
+
+function unlockProFeatures() {
+    document.getElementById('pro-features').disabled = false;
+    document.getElementById('anuncio-label').remove();
+}

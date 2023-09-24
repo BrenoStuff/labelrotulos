@@ -282,7 +282,7 @@
 
                 <!-- Email do Estabelecimento -->
                 <div class="form-floating">
-                    <input type="email" class="form-control" placeholder="minhaloja@exemplo.com" id="floatingEmail" maxlength="80">
+                    <input type="email" class="form-control" placeholder="minhaloja@exemplo.com" id="floatingEmail" maxlength="34">
                     <label for="floatingEmail">Mensagem do Estabelecimento</label>
                 </div>
 
@@ -294,7 +294,13 @@
 
                 <h3 class="text-center my-3">Opções</h3>
                 <a type="button" href="#preview" class="btn btn-green w-100 mb-3" onclick="preparatePDF()">Visualizar Preview</a>
-                <button type="button" class="btn btn-green w-100 mb-3" data-bs-toggle="modal" data-bs-target="#modalPDF">Gerar PDF</button>
+                <button type="button" class="btn btn-green w-100 mb-3" onclick="generatePDF()">Gerar PDF</button>
+                <fieldset id="pro-features" disabled>
+                    <section class="d-flex flex-column align-items-center">
+                        <label for="colorInput" class="form-label">Cor de fundo</label>
+                        <input type="color" class="form-control form-control-color" id="colorInput" value="#ffffff" title="Escolha a cor do fundo" onchange="changeBackgroundColor()">
+                    </section>
+                </fieldset>
 
                 <!-- AD -->
                 <div class="my-4 col-12" style="background:#00000050; height: 60vh;">
@@ -310,7 +316,7 @@
                     <div class="inner-content" id="content">
                         <div style="display: flex; flex-wrap: wrap;" id="gridRotulos">
                             <div class="col-6 rotulo" id="rotulo">
-                                <p class="my-3 text-center" id="email">minhaempresa@exemplo.com</p>
+                                <p class="my-3 text-center" id="anuncio-label">Feito com www.label.com</p>
                                 <div style="display: flex; flex-wrap: wrap;">
                                     <div class="col-6 d-flex justify-content-center align-items-center">
                                         <img src="https://labelrotulos.pages.dev/img/label-logo.png" alt="Logo" width="120" height="120" style="border-radius: 50%;" id="imagemExibida">
@@ -369,9 +375,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-around align-items-center" style="height: 40px">
-                                    <p class="m-0">FAB: <span id="fab">0000-00-00</span></p>
-                                    <p class="m-0">VAL: <span id="val">0000-00-00</span></p>
+                                <div class="row" style="height: 40px">
+                                    <div class="col-6 text-center">
+                                        <p class="m-0" id="email">exemplo</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-around align-items-center pt-3 pe-2" style="margin-left: -7px;">
+                                            <p class="m-0">FAB: <span id="fab">0000-00-00</span></p>
+                                            <p class="m-0">VAL: <span id="val">0000-00-00</span></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -389,7 +402,7 @@
     </footer>
 
     <!-- Modal Planos-->
-    <div class="modal fade" id="modalPDF" tabindex="-1" aria-labelledby="modalPDFLabel" aria-hidden="true">
+    <div class="modal fade show" id="modalPDF" tabindex="-1" aria-labelledby="modalPDFLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -413,7 +426,7 @@
                                     <p class="mt-1">&nbsp;</p>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="generatePDF()">Quero esse</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-bs-dismiss="modal">Quero esse</button>
                         </div>
                         <div class="col-md-6 text-center mb-5 mb-md-0">
                             <p><b>Pro</b><br>R$ 9,90 ao mês</p>
@@ -537,7 +550,7 @@
                                 </div>
                                 <hr>
                                 <p class="text-end"><b>Total: RS$ 9,90</b></p>
-                                <a type="button" class="btn btn-green w-100 mb-3" data-bs-dismiss="modal">Comprar</a>
+                                <a type="button" class="btn btn-green w-100 mb-3" data-bs-dismiss="modal" onclick="unlockProFeatures()">Comprar</a>
                             </form>
                         </div>
                     </div>
@@ -546,5 +559,11 @@
         </div>
     </div>
 
+    <script type="text/javascript">
+        window.onload = () => {
+          const myModal = new bootstrap.Modal('#modalPDF');
+          myModal.show();
+        }
+    </script>
 </body>
 </html>
