@@ -76,3 +76,22 @@ function reformatDate(dateStr){
   var dArr = dateStr.split("-");  // ex input: "2010-01-18"
   return dArr[2]+ "/" +dArr[1]+ "/" +dArr[0]; //ex output: "18/01/2010"
 }
+
+function exibirImagem() {
+    const imagemInput = document.getElementById('imagemInput');
+    const imagemExibida = document.getElementById('imagemExibida');
+
+    const arquivo = imagemInput.files[0];
+
+    if (arquivo) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            imagemExibida.src = e.target.result;
+        };
+
+        reader.readAsDataURL(arquivo);
+    } else {
+        imagemExibida.src = 'https://labelrotulos.pages.dev/img/label-logo.png';
+    }
+}
